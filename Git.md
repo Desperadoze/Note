@@ -98,7 +98,9 @@ clone会做如下操作：1、拉取代码。2初始化本地仓库。3、创建
 
 Windows家目录运行git bash
 
-ssh-keygen -t rsa -C SSH链接
+`ssh-keygen -t rsa -C` SSH链接
+
+输入`cat ~/.ssh/id_rsa.pub`查看公钥
 
 公钥添加进GitHub
 
