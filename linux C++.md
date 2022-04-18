@@ -6,7 +6,7 @@
 
 
 
-![image-20220414160926281](C:\Users\82173\AppData\Roaming\Typora\typora-user-images\image-20220414160926281.png)
+![image-20220414160926281.png](https://pic.dogimg.com/2022/04/18/625d220dc1872.png)
 
 输入不同参数以直接执行靠后的指令，前面的过程都会被默认执行
 
@@ -51,12 +51,12 @@ Linux：libxxx.a
 
 ​		.a 后缀
 
-![image-20220414163715487](C:\Users\82173\AppData\Roaming\Typora\typora-user-images\image-20220414163715487.png)
+![image-20220414163715487.png](https://pic.dogimg.com/2022/04/18/625d223a15cd2.png)
 
 
 
 ### 动态库的制作
 
-![image-20220414165153156](C:\Users\82173\AppData\Roaming\Typora\typora-user-images\image-20220414165153156.png)
+![image-20220414165153156.png](https://pic.dogimg.com/2022/04/18/625d223b82874.png)
 
-![image-20220414165249833](C:\Users\82173\AppData\Roaming\Typora\typora-user-images\image-20220414165249833.png)
+![image-20220414165249833.png](https://pic.dogimg.com/2022/04/18/625d223cb56b2.png)
