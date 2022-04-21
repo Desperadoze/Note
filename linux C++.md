@@ -60,3 +60,49 @@ Linux：libxxx.a
 ![image-20220414165153156.png](https://pic.dogimg.com/2022/04/18/625d223b82874.png)
 
 ![image-20220414165249833.png](https://pic.dogimg.com/2022/04/18/625d223cb56b2.png)
+
+
+
+### makefile
+
+目标：依赖
+
+​		命令
+
+`make`
+
+##### 自定义变量
+
+变量名=变量值  var=hello
+
+##### 预定义变量
+
+AR：归档维护程序，默认值为ar
+
+CC：C compiler，默认值cc
+
+CXX：g++
+
+$@:目标的完整名称
+
+$<:第一个依赖文件的名称
+
+$^:所有的依赖文件
+
+##### 获取变量的值
+
+$变量名
+
+#### 模式匹配
+
+% 通配符
+
+#### 函数
+
+##### $(wildcard PATTERN...)
+
+##### $(patsubst <source>,<target>,$(src))
+
+##### 伪目标
+
+不会和外界文件进行对比
