@@ -106,3 +106,69 @@ $变量名
 ##### 伪目标
 
 不会和外界文件进行对比
+
+
+
+### GDB调试
+
+`-g`
+
+`Wall`打开所有警告
+
+`q  quit`退出
+
+`gcc -g -Wall program.c -o -program`
+
+启动：`gdb 可执行文件`
+
+设置/获取参数：set、show
+
+`list`查看代码
+
+查看非当前文件代码
+
+`list 文件名：行号`,也可以接函数名
+
+默认显示10行
+
+`set list num`设置行数
+
+##### 断点  断点行不执行
+
+- 设置断点`b/break 行号`
+
+- 查看断点`info break`
+
+> 打断点在函数或者别的文件中也可，和list相似
+
+==info可以简写为i，break也可简写为b==
+
+- 删除断点`delete 断点号（用info去查）`
+
+- 设置断点无效`disable/dis`
+- 设置断点有效`enable/ena`
+
+- 条件断点`break 10 if i==5`   一般用在循环的位置
+
+##### GDB调试命令
+
+- `start `停在第一行
+- `run` 遇到断点才停
+- `c/continue` 继续运行，到下一个断点停
+- `n/next` 向下执行一行代码（不会进入函数体）
+- `p/print `变量
+- `ptype `变量
+- `s/step `向下单步调试（会进入函数体）
+- `finish `跳出函数体，函数中不能有断点
+- `display num`自动打印指定变量的值
+- `i/info display`
+- `undisplay num`
+- `set var` 变量名=变量值
+- `until` 跳出循环
+
+### 文件IO
+
+标准C库会通过FILE文件指针写入buffer
+
+Linux系统IO会直接传，网络通信使用这个
+
